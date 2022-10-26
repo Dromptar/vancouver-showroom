@@ -1,0 +1,9 @@
+#logo {
+    width: 80px;
+    border-radius: 50%;
+}
+#cart {
+    color: white;
+    padding: 20px;
+    font-size: 2em;;
+}
