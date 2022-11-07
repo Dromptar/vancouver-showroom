@@ -1,0 +1,27 @@
+#logo {
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-right: 100px
+}
+#cart {
+    color: white;
+    padding: 20px;
+    font-size: 2em;;
+}
+
+.navbar-expand-lg .navbar-nav {
+    align-items: baseline;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    align-items: baseline;
+}
+
+li.nav-item {
+    padding: 8px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link  {
+    color: black;
+}

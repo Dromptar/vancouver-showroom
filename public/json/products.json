@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "idCategoria": 1,
+        "nombre": "Remera Fugu",
+        "marca": "Fugu",
+        "modelo": "Fugu manga corta blanca",
+        "precio": 2000,
+        "stock": 10,
+        "img": "fugu.jpg"
+    },
+    {
+        "id": 2,
+        "idCategoria": 2,
+        "nombre": "Remera Hebi",
+        "marca": "Hebi",
+        "modelo": "Hebi manga corta negro",
+        "precio": 2000,
+        "stock": 10,
+        "img": "hebi.jpg"
+    },
+    {
+        "id": 3,
+        "idCategoria": 2,
+        "nombre": "Remera Daruma",
+        "marca": "Daruma",
+        "modelo": "Daruma manga corta negro",
+        "precio": 2000,
+        "stock": 10,
+        "img": "daruma.jpg"
+    },
+    {
+        "id": 4,
+        "idCategoria": 1,
+        "nombre": "Remera Ryu",
+        "marca": "Ryu",
+        "modelo": "Ryu manga corta blanca",
+        "precio": 2000,
+        "stock": 10,
+        "img": "ryu.jpg"
+    },
+    {
+        "id": 5,
+        "idCategoria": 1,
+        "nombre": "Remera Oni",
+        "marca": "Oni",
+        "modelo": "Oni manga corta blanca",
+        "precio": 2000,
+        "stock": 10,
+        "img": "oni.jpg"
+    }
+    
+]

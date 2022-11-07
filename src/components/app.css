@@ -1,0 +1,20 @@
+.App {
+    background-color: cyan;
+}
+
+.productCard {
+    width: 16rem;
+    margin: 6px;
+}
+
+.itemDetail {
+    max-width: 540px;
+    margin-top: 20px;
+}
+
+.row {
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
