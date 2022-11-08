@@ -1,9 +1,13 @@
-.App {
-    background-color: cyan;
+body {
+    background: url("../../public/img/granville-street.jpg");
+    background-attachment: fixed;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.productCard {
-    width: 16rem;
+.border-success {
+    width: 18rem;
     margin: 6px;
 }
 

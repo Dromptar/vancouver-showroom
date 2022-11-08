@@ -48,6 +48,26 @@
         "precio": 2000,
         "stock": 10,
         "img": "oni.jpg"
+    },
+    {
+        "id": 6,
+        "idCategoria": 1,
+        "nombre": "White one",
+        "marca": "Oni",
+        "modelo": "White one manga corta blanca",
+        "precio": 2000,
+        "stock": 10,
+        "img": "white.jpg"
+    },
+    {
+        "id": 7,
+        "idCategoria": 2,
+        "nombre": "Black one",
+        "marca": "Oni",
+        "modelo": "Black one manga corta negra",
+        "precio": 2000,
+        "stock": 10,
+        "img": "black.jpg"
     }
     
 ]

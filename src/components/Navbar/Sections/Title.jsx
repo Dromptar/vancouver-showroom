@@ -1,8 +1,8 @@
 const Title = () => {
     return (
-        <li>
-            <button type="button" class="btn btn-outline-warning">Vancouver Showroom</button>
-        </li>
+        
+            <a class="navbar-brand" href="#">Vancouver Showroom</a>
+      
     );
 }
 

@@ -23,8 +23,8 @@ const Navbar = () => {
                   <span className="visually-hidden">(current)</span>
               </li>
             <Dropdown dropdown={"Remeras"}/>
-            <Title/>
             </ul>
+            <Title/>
             <CartWidget/>
           </div>
         </div>
