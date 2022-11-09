@@ -1,13 +1,15 @@
-import {useState, useEffect } from "react";
+import {useState, useEffect, useContext } from "react";
 import ItemList from "../ItemList/ItemList";
 import {consultDB} from '../../assets/productsCard'
 import { useParams } from "react-router-dom";
+import { DarkModeContext} from "../../context/darkMode";
 
 const ItemListContainer = () => {
 
     const [products, setProducts] = useState([]);
     const {category} = useParams()
 
+    const{darkMode, toggleDarkMode} = useContext(DarkModeContext);
     useEffect(() => {    
       if(category) {
         consultDB('../json/products.json').then(productos => {
@@ -24,10 +26,11 @@ const ItemListContainer = () => {
   } , [category]);
 
     return (
-      <div className="row">
+      <div className= {darkMode ? "row darkMode": "row"}>
+        <button className={darkMode ? "btn btn-light" : "btn btn-dark" }>Button waiting to run</button>
         {products}
       </div>  
-    );
+    )
 }
 
 export default ItemListContainer;

@@ -10,10 +10,13 @@ const Navbar = () => {
 
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#" ><img src="../img/logoprov.jpg" id="logo" alt="logo" /></a>
+        <Link className='nav-link' to="/">
+        <img src="../img/logoprov.jpg" id="logo" alt="logo" />
+                </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
           </button>
+          <Title/>
           <div className="collapse navbar-collapse" id="navbarColor02">
             <ul className="navbar-nav me-auto">
               <li className="nav-item">
@@ -23,9 +26,9 @@ const Navbar = () => {
                   <span className="visually-hidden">(current)</span>
               </li>
             <Dropdown dropdown={"Remeras"}/>
-            </ul>
-            <Title/>
             <CartWidget/>
+            </ul>
+            
           </div>
         </div>
       </nav>                

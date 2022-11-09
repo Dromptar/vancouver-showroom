@@ -14,10 +14,10 @@ const Item = ({prod}) => {
         //             </div>
         //     </div>
         <div className="card border-success mb-3" style={{maxWidth: '20rem'}}>
-            <div className="card-header">{prod.nombre}</div>
+            <div className="card-header">{prod.marca}</div>
             <img src={`../img/${prod.img}`} className="card-img-top" alt="..." />
             <div className="card-body">
-                <h4 className="card-title">Marca: {prod.marca}</h4>
+                <h4 className="card-title">{prod.nombre}</h4>
                 <p className="card-text">Precio: ${prod.precio}</p>
                 <button className="btn btn-dark"><Link className="nav-link" to={`/product/${prod.id}`}>Ver producto</Link></button>
             </div>

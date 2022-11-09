@@ -2,20 +2,25 @@
     width: 80px;
     border-radius: 50%;
     margin-left: 50px;
-    margin-right: 100px
 }
+
 #cart {
     color: white;
     padding: 20px;
     font-size: 2em;;
+    display: flex;
 }
 
 .navbar-expand-lg .navbar-nav {
-    align-items: baseline;
+    align-items: center;
 }
 
-.navbar-expand-lg .navbar-collapse {
-    align-items: baseline;
+.navbar-collapse {
+    flex-grow: 0;
+}
+ul.navbar-nav.me-auto {
+    align-items: center;
+    justify-content: flex-end;
 }
 
 li.nav-item {
