@@ -10,14 +10,24 @@
 }
 
 .row {
+    background: url("../../public/img/vancouver.jpg");
+    background-attachment: fixed;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #2a2a2a;
+    transition: 2s ease;
     justify-content: center;
-    margin: 20px;
     padding: 20px;
+    width: 100%;
 }
 
 .darkMode {
     background: url("../../public/img/granville-street.jpg");
-    background-position-y: bottom;
+    background-attachment: fixed;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
     background-color: #2a2a2a;
     color: ghostwhite;
 }

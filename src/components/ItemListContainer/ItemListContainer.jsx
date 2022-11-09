@@ -27,7 +27,7 @@ const ItemListContainer = () => {
 
     return (
       <div className= {darkMode ? "row darkMode": "row"}>
-        <button className={darkMode ? "btn btn-light" : "btn btn-dark" }>Button waiting to run</button>
+        <button className={darkMode ? "btn btn-light" : "btn btn-dark" } onClick={() =>toggleDarkMode()} >Cambiar modo</button>
         {products}
       </div>  
     )
