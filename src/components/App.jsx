@@ -3,6 +3,7 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom';
 
 //Context
 import { DarkModeProvider } from '../context/darkMode';
+import { CartContextProvider } from '../context/CartContext';
 
 //Components
 import Navbar from './Navbar/Navbar';
@@ -17,13 +18,16 @@ const App = () => {
 
       <DarkModeProvider props="Hello there!">
         <BrowserRouter>
+          <CartContextProvider>
           <Navbar/>
           <Routes>
             <Route path='/' element={<ItemListContainer/>}/>
             <Route path='/product/:id' element={<ItemDetailContainer/>}/>
-            <Route path='/Cart' element={<Cart/>}/>
+            <Route path='/cart' element={<Cart/>}/>
             <Route path='/category/:category' element={<ItemListContainer/>}/>
+            {/* <Route path='/checkout' element={<Checkout/>}></Route> */}
           </Routes>
+          </CartContextProvider> 
         </BrowserRouter>
       </DarkModeProvider>
       
