@@ -10,6 +10,7 @@ import Navbar from './Navbar/Navbar';
 import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer';
 import Cart from './Cart/Cart';
 import ItemListContainer from './ItemListContainer/ItemListContainer';
+import Checkout from './Checkout/Checkout'
 
 const App = () => {
  
@@ -25,7 +26,8 @@ const App = () => {
             <Route path='/product/:id' element={<ItemDetailContainer/>}/>
             <Route path='/cart' element={<Cart/>}/>
             <Route path='/category/:category' element={<ItemListContainer/>}/>
-            {/* <Route path='/checkout' element={<Checkout/>}></Route> */}
+            <Route path='/checkout' element={<Checkout/>}></Route>
+            <Route path='*' element= {<h1>Page not found</h1>} />
           </Routes>
           </CartContextProvider> 
         </BrowserRouter>

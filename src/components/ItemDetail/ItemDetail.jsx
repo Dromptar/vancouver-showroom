@@ -14,7 +14,7 @@ const ItemDetail = ({producto}) => {
     return (
         <div className='row g-0'>
             <div className='col-md-4'>
-                <img src={`../img/${producto.img}`} className='img-fluid round' alt='image'></img>
+                <img src={producto.img} className='img-fluid round' alt='image'></img>
             </div>
             <div className='col-md-8'>
                 <div className='card-body'>

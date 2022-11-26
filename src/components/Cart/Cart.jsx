@@ -18,14 +18,14 @@ const Cart = () => {
                 {cart.map((prod,indice) =><div className="card mb-3" key={indice} style={{maxWidth: '540px'}}>
                 <div className="row g-0">
                     <div className="col-md-4">
-                    <img src={`../img/${prod.img}`} className="img-fluid rounded-start" alt="..." />
+                    <img src={prod.img} className="img-fluid rounded-start" alt="..." />
                 </div>
                     <div className="col-md-8">
                         <div className="card-body">
                             <h5 className="card-title">{prod.nombre}</h5>
                             <p className="card-text">Cantidad: {prod.quan}</p>
                             <p className="card-text">Precio unitario: {prod.precio}</p>
-                            <p className="card-text">Subtotal: {prod.precio * prod.cant}</p>
+                            <p className="card-text">Subtotal: {prod.precio * prod.quan}</p>
                         </div>
                         <button className="btn btn-danger" onClick={() => removeItem(prod.id)}>Eliminar Producto</button>
                     </div>

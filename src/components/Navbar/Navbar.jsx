@@ -1,11 +1,12 @@
 import './navbar.css';
+import React from 'react';
 import {Link} from 'react-router-dom'
 import Dropdown from './Dropdown/Dropdown';
 import CartWidget from '../CartWidget/CartWidget';
 import Title from '../Navbar/Sections/Title'
 
 
-const Navbar = () => {
+const Navbar = React.memo(() => {
     return (
 
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -36,7 +37,7 @@ const Navbar = () => {
        
         
     )
-  }
+  })
 
   export default Navbar
 

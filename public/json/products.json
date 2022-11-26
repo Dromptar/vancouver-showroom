@@ -5,9 +5,9 @@
         "nombre": "Remera Fugu",
         "marca": "Fugu",
         "modelo": "Fugu manga corta blanca",
-        "precio": 2000,
+        "precio": 4500,
         "stock": 10,
-        "img": "fugu.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-c1cf8.appspot.com/o/fugu.jpg?alt=media&token=7723d968-b4b7-4c48-8476-5b3fdd1aa0a0"
     },
     {
         "id": 2,
@@ -15,9 +15,9 @@
         "nombre": "Remera Hebi",
         "marca": "Hebi",
         "modelo": "Hebi manga corta negro",
-        "precio": 2000,
+        "precio": 4500,
         "stock": 10,
-        "img": "hebi.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-c1cf8.appspot.com/o/hebi.jpg?alt=media&token=4853a19f-3b99-44d3-9236-7362c6bc9bb7"
     },
     {
         "id": 3,
@@ -25,9 +25,9 @@
         "nombre": "Remera Daruma",
         "marca": "Daruma",
         "modelo": "Daruma manga corta negro",
-        "precio": 2000,
+        "precio": 4500,
         "stock": 10,
-        "img": "daruma.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-c1cf8.appspot.com/o/daruma.jpg?alt=media&token=ecfa87e7-547f-4f79-90d2-30ed3b974269"
     },
     {
         "id": 4,
@@ -35,9 +35,9 @@
         "nombre": "Remera Ryu",
         "marca": "Ryu",
         "modelo": "Ryu manga corta blanca",
-        "precio": 2000,
+        "precio": 4500,
         "stock": 10,
-        "img": "ryu.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-c1cf8.appspot.com/o/ryu.jpg?alt=media&token=d203273b-41fc-4089-816a-895563536eda"
     },
     {
         "id": 5,
@@ -45,9 +45,9 @@
         "nombre": "Remera Oni",
         "marca": "Oni",
         "modelo": "Oni manga corta blanca",
-        "precio": 2000,
+        "precio": 4500,
         "stock": 10,
-        "img": "oni.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-c1cf8.appspot.com/o/oni.jpg?alt=media&token=875ee6d5-5550-40d0-baed-5aec63f58c5b"
     },
     {
         "id": 6,
@@ -55,9 +55,9 @@
         "nombre": "White one",
         "marca": "Oni",
         "modelo": "White one manga corta blanca",
-        "precio": 2000,
+        "precio": 4500,
         "stock": 10,
-        "img": "white.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-c1cf8.appspot.com/o/white.jpg?alt=media&token=5f991512-aa91-43c3-850e-11b8c5e8b8b2"
     },
     {
         "id": 7,
@@ -65,9 +65,9 @@
         "nombre": "Black one",
         "marca": "Oni",
         "modelo": "Black one manga corta negra",
-        "precio": 2000,
+        "precio": 4500,
         "stock": 10,
-        "img": "black.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-c1cf8.appspot.com/o/black.jpg?alt=media&token=555a50e1-5b19-442b-aaa9-fdcfa4f00647"
     }
     
 ]

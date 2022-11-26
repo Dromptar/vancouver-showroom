@@ -5,7 +5,7 @@ const Item = ({prod}) => {
       
         <div className="card border-success mb-3" style={{maxWidth: '20rem'}}>
             <div className="card-header">{prod.marca}</div>
-            <img src={`../img/${prod.img}`} className="card-img-top" alt="..." />
+            <img src={prod.img} className="card-img-top" alt="..." />
             <div className="card-body">
                 <h4 className="card-title">{prod.nombre}</h4>
                 <p className="card-text">$ {new Intl.NumberFormat('de-DE').format(prod.precio)}</p>

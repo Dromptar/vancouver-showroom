@@ -1,6 +1,6 @@
 import {useState, useEffect, useContext } from "react";
 import ItemList from "../ItemList/ItemList";
-import {consultDB} from '../../assets/productsCard'
+import {getProductos} from '../../assets/firebase.js'
 import { useParams } from "react-router-dom";
 import { DarkModeContext} from "../../context/darkMode";
 
@@ -12,13 +12,13 @@ const ItemListContainer = () => {
     const{darkMode, toggleDarkMode} = useContext(DarkModeContext);
     useEffect(() => {    
       if(category) {
-        consultDB('../json/products.json').then(productos => {
-        const productsList = productos.filter( prod => prod.idCategoria ===parseInt(category))
+        getProductos().then(productos => {
+        const productsList = productos.filter( prod => prod.idCategoria === parseInt(category))
         const productsCard = ItemList({productsList});
         setProducts(productsCard);
         })
       } else {
-          consultDB('../json/products.json').then(productsList => {
+          getProductos().then(productsList => {
           const productsCard = ItemList({productsList});
           setProducts(productsCard);
           })

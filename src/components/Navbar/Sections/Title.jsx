@@ -1,7 +1,7 @@
 const Title = () => {
     return (
         
-            <a class="navbar-brand" href="#"><h1>Vancouver Showroom</h1></a>
+            <a className="navbar-brand" href="#"><h1>Vancouver Showroom</h1></a>
       
     );
 }

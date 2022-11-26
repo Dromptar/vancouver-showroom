@@ -39,7 +39,7 @@ const CartContextProvider = (props) => {
         }
 
         const totalPrice = () => {
-            return cart.reduce((acum, prod) => acum += (prod.quan * prod.precio))
+            return cart.reduce((acum, prod) => acum += (prod.quan * prod.precio), 0)
         }
         
         console.log(cart);
