@@ -43,7 +43,7 @@ const getProducto = async(id) => {
     const prod = await getDoc(doc(db, "products", id))
     let item;
     if(prod.data()) {
-        const item = {...prod.data(), id: prod.id}
+       item = {...prod.data(), id: prod.id}
     } else {
         item = "Producto no encontrado";
     }
