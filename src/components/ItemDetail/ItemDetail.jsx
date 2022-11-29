@@ -14,7 +14,7 @@ const ItemDetail = ({producto}) => {
     return (
         <div className='row g-0'>
             <div className='col-md-4'>
-                <img src={producto.img} className='img-fluid round' alt='image'></img>
+                <img src={producto.img} className='img-fluid round-start' alt='image'></img>
             </div>
             <div className='col-md-8'>
                 <div className='card-body'>
@@ -22,12 +22,14 @@ const ItemDetail = ({producto}) => {
                     <p className='card-text'>Modelo: {producto.modelo}</p>
                     <p className='card-text'>Marca: {producto.marca}</p>
                     <p className='card-text'>Precio: ${producto.precio}</p>
-                    <p className='card-text'>Stock: {producto.stock}</p>
+                    <p className='card-text'>Stock: Quedan {producto.stock}</p>
                     <ItemCount stock = {producto.stock} onAdd={onAdd}/><br/>
-                    <button className='btn btn-secondary'><Link to="/cart" className='nav-link'>Finalizar compra</Link></button>
+                    <button className='btn btn-primary'><Link to="/cart" className='nav-link'>Finalizar compra</Link></button>
                 </div>
             </div>
         </div>
+
+        
         
     );
     

@@ -30,3 +30,13 @@ li.nav-item {
 .navbar-expand-lg .navbar-nav .nav-link  {
     color: black;
 }
+
+.cart-icone .nav-link {
+    display: flex;
+    align-items: flex-end;
+    color: white;
+}
+
+.cart-icone .nav-link p {
+    color: white;
+}

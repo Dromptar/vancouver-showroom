@@ -37,9 +37,9 @@ const Checkout = () => {
 
     return (
         <div className="container">
-            <form onSubmit={consultarFormulario} ref={datosFormulario}>
+            <form onSubmit={consultarFormulario} id="checkout-form" ref={datosFormulario}>
                 <div className="mb-3">
-                    <label htmlFor="nombre" className="form-label">Nombre</label>
+                    <label htmlFor="nombre" className="form-label" placeholder="Tu nombre">Nombre</label>
                     <input type="text" className="form-control" name="nombre" />
                 </div>
                 <div className="mb-3">
