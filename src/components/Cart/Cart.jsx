@@ -9,9 +9,9 @@ const Cart = () => {
         <>
            
             {cart.length === 0 ? 
-            <div>
-                <p>Tu carrito esta vacio</p>
-                <Link to={'/'}><button className="btn btn-dark">Ir al inicio</button></Link>
+            <div id="empty-cart">
+                <p>Tu carrito esta vacio!</p>
+                <Link to={'/'}><button className="btn btn-dark">Ir al inicio </button></Link>
             </div> 
             : 
             <div>
@@ -24,7 +24,7 @@ const Cart = () => {
                         <div className="card-body">
                             <h5 className="card-title">{prod.nombre}</h5>
                             <p className="card-text">Cantidad: {prod.quan}</p>
-                            <p className="card-text">Precio unitario: {prod.precio}</p>
+                            <p className="card-text">Precio unitario: {prod.precio}$</p>
                             <p className="card-text">Subtotal: {prod.precio * prod.quan}</p>
                         </div>
                         <button className="btn btn-danger" onClick={() => removeItem(prod.id)}>Eliminar Producto</button>
@@ -32,11 +32,11 @@ const Cart = () => {
                 </div>
             </div>
             )}
-            <div>
-                <p>Total: {totalPrice()}</p>
+            <div id="cart-final-path">
+                <p>Total: {totalPrice()}$</p>
                 <button className="btn btn-danger" onClick={emptyCart}>Limpiar Carrito</button>
                 <Link to="/checkout">
-                    <button className="btn btn-primary">Finalizar Compra</button>
+                    <button className="btn btn-warning">Finalizar Compra</button>
                 </Link>
             </div>
             </div>

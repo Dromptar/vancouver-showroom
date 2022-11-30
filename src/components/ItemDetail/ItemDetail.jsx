@@ -6,7 +6,7 @@ import { CartContext } from '../../context/CartContext';
 
 const ItemDetail = ({producto}) => {
 
-    const {cart, isInCart, addItem} = useContext(CartContext);
+    const {addItem} = useContext(CartContext);
 
     const onAdd = (contador) => {
         addItem(producto, contador)
@@ -14,7 +14,7 @@ const ItemDetail = ({producto}) => {
     return (
         <div className='row g-0'>
             <div className='col-md-4'>
-                <img src={producto.img} className='img-fluid round-start' alt='image'></img>
+                <img src={producto.img} className='img-fluid round-start' alt=''></img>
             </div>
             <div className='col-md-8'>
                 <div className='card-body'>
@@ -22,9 +22,9 @@ const ItemDetail = ({producto}) => {
                     <p className='card-text'>Modelo: {producto.modelo}</p>
                     <p className='card-text'>Marca: {producto.marca}</p>
                     <p className='card-text'>Precio: ${producto.precio}</p>
-                    <p className='card-text'>Stock: Quedan {producto.stock}</p>
-                    <ItemCount stock = {producto.stock} onAdd={onAdd}/><br/>
-                    <button className='btn btn-primary'><Link to="/cart" className='nav-link'>Finalizar compra</Link></button>
+                    <p className='card-text'>Stock: Quedan {producto.stock} unidades</p>
+                    <ItemCount stock = {producto.stock} onAdd={onAdd}/>
+                    <button id='finishToBuy' className='btn btn-warning'><Link to="/cart" className='nav-link'>Finalizar compra</Link></button>
                 </div>
             </div>
         </div>

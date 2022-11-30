@@ -28,7 +28,6 @@ body {
     width: 100%;
 }
 
-
 .itemDetail {
     max-width: 750px;
     margin-top: 20px;
@@ -36,6 +35,43 @@ body {
     border-radius: 5px;
     background-color: rgb(238, 238, 238);
 }
+
+#addToCart {
+    margin-left: 20px;
+}
+
+#finishToBuy {
+    margin-left: 10px;
+}
+
+#cart-final-path {
+    text-align: center;
+    width: 40%;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: rgb(238, 238, 238, 0.5);
+}
+
+#cart-final-path p {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+#cart-final-path button {
+    margin: 5px;
+}
+
+#empty-cart {
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    margin: 50px auto;
+    background-color: rgb(238, 238, 238, 0.6);
+}
+
 
 
 /* .darkMode {
