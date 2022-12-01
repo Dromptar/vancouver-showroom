@@ -37,4 +37,5 @@ _Este proyecto es para aprender react. Decidi crear una app para un amigo que qu
 
 # Screenshot
 
-![alt text]()
+![alt text](docs/gif1.gif)
+![alt text](docs/gif2.gif)
