@@ -24,7 +24,7 @@ const ItemDetail = ({producto}) => {
                     <p className='card-text'>Precio: ${producto.precio}</p>
                     <p className='card-text'>Stock: Quedan {producto.stock} unidades</p>
                     <ItemCount stock = {producto.stock} onAdd={onAdd}/>
-                    <button id='finishToBuy' className='btn btn-warning'><Link to="/cart" className='nav-link'>Finalizar compra</Link></button>
+                    <button id='finishToBuy' className='btn btn-warning'><Link to="/cart" className='nav-link'>Ir al carrito</Link></button>
                 </div>
             </div>
         </div>
